@@ -68,19 +68,19 @@
             <dependency>
                 <groupId>org.jevis.api</groupId>
                 <artifactId>jeapi</artifactId>
-                <version>3.1.4</version>
+                <version>4.0.0</version>
             </dependency>
 
             <dependency>
                 <groupId>org.jevis.commons</groupId>
                 <artifactId>JECommons</artifactId>
-                <version>3.28</version>
+                <version>4.0.0</version>
             </dependency>
 
             <dependency>
                 <groupId>org.jevis</groupId>
                 <artifactId>JEAPI-WS</artifactId>
-                <version>1.24</version>
+                <version>4.0.0</version>
             </dependency>
 
             <dependency>
@@ -152,7 +152,7 @@
             <dependency>
                 <groupId>org.controlsfx</groupId>
                 <artifactId>controlsfx</artifactId>
-                <version>8.40.14</version>
+                <version>11.0.1</version>
             </dependency>
             <dependency>
                 <groupId>joda-time</groupId>

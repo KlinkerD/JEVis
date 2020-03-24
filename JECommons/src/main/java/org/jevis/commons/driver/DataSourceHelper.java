@@ -57,6 +57,8 @@ public class DataSourceHelper {
     }
 
     static public void doTrustToCertificates() throws Exception {
+        return;
+        /**
         Security.addProvider(new com.sun.net.ssl.internal.ssl.Provider());
         TrustManager[] trustAllCerts = new TrustManager[]{
             new X509TrustManager() {
@@ -86,6 +88,7 @@ public class DataSourceHelper {
             }
         };
         HttpsURLConnection.setDefaultHostnameVerifier(hv);
+         **/
     }
 
     public static List<String> getFTPMatchedFileNames(FTPClient fc, DateTime lastReadout, String filePath) {
