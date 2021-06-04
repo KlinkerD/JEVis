@@ -373,6 +373,7 @@ public class ResourceSample {
                         throw new JEVisException("permission denied", 3023);
                     }
                 }
+                canWrite = ds.getUserManager().canWriteWOE(object);
 
                 if (object.getJevisClass().equals("User") && object.getId() == ds.getCurrentUser().getUserID()) {
                     if (attribute.equals("Enabled") || attribute.equals("Sys Admin")) {
@@ -383,7 +384,7 @@ public class ResourceSample {
                     /**
                      * hotfix implementation to allow users to update notes if they have execute permission but not write
                      */
-                    canWrite = ds.getUserManager().canWriteWOE(object);
+
                     logger.debug("canWrite {}", canWrite);
                     if (!canWrite) {
                         if (ds.getUserManager().canExecuteWOE(object) && executeUpdateExceptions.contains(object.getJevisClass())) {
